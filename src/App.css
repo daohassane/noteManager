@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    width: 100%;
+    height: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'Poppins', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0, 0.5);
+    width: 350px;
+    padding: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper h1 {
+    text-align: center;
+}
+.items {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    border-top: 3px solid #e6e6e6;
+    max-height: 180px;
+    overflow: scroll;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+}
+.item span {
+    font-weight: bold;
+}
+.item button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    color: red;
+}
+.note-form {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    width: 100%;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.field label {
+    display: block;
+    line-height: 1.64;
+    color: slategrey;
+}
+.field input {
+    padding: 10px;
+}
+.note-form button {
+    background-color: royalblue;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+small {
+    color: darkred;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1.7;
+    margin-top: 2px;
 }
